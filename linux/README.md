@@ -8,12 +8,9 @@ Reference: [https://app.datadoghq.com/account/settings/agent/latest?platform=ubu
 DD_API_KEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX DD_SITE="datadoghq.com" DD_APM_INSTRUMENTATION_ENABLED=host  bash -c "$(curl -L https://s3.amazonaws.com/dd-agent/scripts/install_script_agent7.sh)"
 ```
 
-### 2. Add env, team and provider host tags in the agent main configuration file /etc/datadog-agent/datadog.yaml to identify resources.
+### 2. Add env, team and provider host tags in the [agent main configuration file](https://docs.datadoghq.com/agent/configuration/agent-configuration-files/?tab=agentv6v7) /etc/datadog-agent/datadog.yaml to identify resources.
 Reference: 
 [https://docs.datadoghq.com/getting_started/tagging/assigning_tags/?tab=noncontainerizedenvironments#methods-to-assign-tags](https://docs.datadoghq.com/getting_started/tagging/assigning_tags/?tab=noncontainerizedenvironments#methods-to-assign-tags)
-
-
-[https://docs.datadoghq.com/agent/configuration/agent-configuration-files/?tab=agentv6v7](https://docs.datadoghq.com/agent/configuration/agent-configuration-files/?tab=agentv6v7)
 
 ```
 tags:
