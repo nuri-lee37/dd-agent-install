@@ -2,7 +2,7 @@
 
 This guide is written for EKS environment.
 
-You can customize the instrumentation option. For example, the datadog-values.yaml will install Java APM trace library 1.36.0 version. Please refer to the below reference link.
+You can customize the instrumentation option. For example, the [datadog-values.yaml](https://github.com/nuri-lee37/dd-agent-install/blob/main/kubernetes/datadog-values.yaml) will install Java APM trace library 1.36.0 version. Please refer to the below reference link.
 
 Reference: [https://app.datadoghq.com/account/settings/agent/latest?platform=kubernetes](https://app.datadoghq.com/account/settings/agent/latest?platform=kubernetes)
 
