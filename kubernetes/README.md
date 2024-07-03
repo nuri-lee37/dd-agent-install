@@ -14,7 +14,7 @@ helm repo update
 kubectl create secret generic datadog-secret --from-literal api-key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 
-*** The application must be deployed in a different namespace than the datadog agent is deployed.
+*** The application must be deployed in a <U>different namespace</U> than the datadog agent is deployed.
 
 ### 2. Configure datadog-values.yaml. You can also define team, env and provider tags for the resource recognition. 
 
