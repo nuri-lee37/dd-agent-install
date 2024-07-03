@@ -16,7 +16,7 @@ kubectl create secret generic datadog-secret --from-literal api-key=XXXXXXXXXXXX
 
 *** The application must be deployed in a __different namespace__ than the datadog agent is deployed.
 
-### 2. Configure datadog-values.yaml. You can also define team, env and provider tags for the resource recognition. 
+### 2. Configure datadog-values.yaml. You can also define team, env and provider tags for the resource recognition. Need to configure the clusterName to identify datadog k8s agent from [k8s tab](https://app.datadoghq.com/kubernetes).
 
 Reference: 
 - [https://docs.datadoghq.com/network_monitoring/performance/setup/?tab=kubernetes](https://docs.datadoghq.com/network_monitoring/performance/setup/?tab=kubernetes)
