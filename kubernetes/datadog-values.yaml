@@ -15,10 +15,17 @@ datadog:
   apm:
     instrumentation:
       enabled: true
+      libVersions:
+        java: v1.36.0      
     portEnabled: true
   tags:
     - "team:infra"
     - "env:prod"
     - "provider:aws"
+  networkMonitoring:
+    enabled: true
+  processAgent:
+    enabled: true
+    processCollection: true
 
 

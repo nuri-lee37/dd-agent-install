@@ -1,4 +1,4 @@
-### 1. Install Datadog Agent + APM Single Step Instrumentation. Add the Datadog Helm Repository.
+### 1. Install Datadog Agent + APM Single Step Instrumentation + NPM/Live Process. Add the Datadog Helm Repository.
 
 This guide is written for EKS environment.
 
@@ -15,7 +15,11 @@ kubectl create secret generic datadog-secret --from-literal api-key=XXXXXXXXXXXX
 
 *** The application must be deployed in a different namespace than the datadog agent is deployed.
 
-### 2. Configure datadog-values.yaml. You can also define team, env and provider tags for the resource recognition.
+### 2. Configure datadog-values.yaml. You can also define team, env and provider tags for the resource recognition. 
+
+Reference: 
+- [https://docs.datadoghq.com/network_monitoring/performance/setup/?tab=kubernetes](https://docs.datadoghq.com/network_monitoring/performance/setup/?tab=kubernetes)
+- [https://docs.datadoghq.com/infrastructure/process/?tab=helm#installation](https://docs.datadoghq.com/infrastructure/process/?tab=helm#installation)
 ```
 targetSystem: "linux"
 clusterAgent:
@@ -29,11 +33,18 @@ datadog:
   apm:
     instrumentation:
       enabled: true
+      libVersions:
+        java: v1.36.0      
     portEnabled: true
   tags:
     - "team:infra"
     - "env:prod"
     - "provider:aws"
+  networkMonitoring:
+    enabled: true
+  processAgent:
+    enabled: true
+    processCollection: true
 ```
 
 ### 3. Deploy Agent with the above configuration file

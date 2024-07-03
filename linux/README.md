@@ -1,4 +1,4 @@
-### 1. Install Datadog Agent + APM Single Step Instrumentation.
+### 1. Install Datadog Agent + APM Single Step Instrumentation + NPM/Live Process.
 
 This guide is written for linux ubuntu host agent.
 
@@ -33,8 +33,7 @@ Reference: [https://docs.datadoghq.com/agent/configuration/agent-commands/?tab=a
 ### 5. Install NPM
 Reference: [https://docs.datadoghq.com/network_monitoring/performance/setup/?tab=agentlinux](https://docs.datadoghq.com/network_monitoring/performance/setup/?tab=agentlinux)
 
-#### 5-1. 
-Copy the system-probe example configuration:
+#### 5-1. Copy the system-probe example configuration:
 ```sudo -u dd-agent install -m 0640 /etc/datadog-agent/system-probe.yaml.example /etc/datadog-agent/system-probe.yaml```
 
 
