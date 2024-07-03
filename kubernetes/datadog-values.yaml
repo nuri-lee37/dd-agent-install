@@ -29,3 +29,4 @@ datadog:
     enabled: true
   processAgent:
     enabled: true
+    processCollection: true

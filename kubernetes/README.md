@@ -48,6 +48,7 @@ datadog:
     enabled: true
   processAgent:
     enabled: true
+    processCollection: true
 ```
 
 ### 3. Deploy Agent with the above configuration file
