@@ -51,6 +51,7 @@ datadog:
 ### 3. Deploy Agent with the above configuration file
 `helm install datadog-agent -f datadog-values.yaml datadog/datadog`
 
+If you need to update the datadog-values.yaml, you can run `helm upgrade datadog-agent -f datadog-values.yaml datadog/datadog`.
 
 ### 4. Check datadog agent installation status
 `kubectl exec -it <Datadog Agent POD_NAME> -- agent status`
