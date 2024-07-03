@@ -31,21 +31,23 @@ clusterAgent:
     mutateUnlabelled: true
 datadog:
   apiKeyExistingSecret: datadog-secret
+  clusterName: mydatadog
+  tags:
+    - env:prod
+    - team:infra
+    - provider:aws
   apm:
     instrumentation:
       enabled: true
       libVersions:
-        java: v1.36.0      
-    portEnabled: true
-  tags:
-    - "team:infra"
-    - "env:prod"
-    - "provider:aws"
+        java: v1.36.0
+  logs:
+    enabled: true
+    containerCollectAll: true
   networkMonitoring:
     enabled: true
   processAgent:
     enabled: true
-    processCollection: true
 ```
 
 ### 3. Deploy Agent with the above configuration file
