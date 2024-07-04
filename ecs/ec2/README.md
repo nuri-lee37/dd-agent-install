@@ -1,4 +1,4 @@
-### 1. Install Datadog Agent + APM + NPM/Live Process.
+### 1. Install Datadog Agent Infra + APM + NPM/Live Process + Log.
 
 This guide is written for ecs ec2 amazon linux 1 environment.
 
