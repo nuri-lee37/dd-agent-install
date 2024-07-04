@@ -4,7 +4,7 @@ This guide is written for ecs ec2 amazon linux 1 environment.
 
 Reference: [https://docs.datadoghq.com/containers/amazon_ecs/?tab=awscli](https://docs.datadoghq.com/containers/amazon_ecs/?tab=awscli)
 
-Create and add an ECS task definition by using datadog-agent-ecs1.json file.
+Create and add an ECS task definition by using [datadog-agent-ecs1.json](https://github.com/nuri-lee37/dd-agent-install/blob/main/ecs/ec2/datadog-agent-ecs1.json) file.
 
 ### 2. Edit the task definition file.
 - Replace DD_API_KEY from the file. 
