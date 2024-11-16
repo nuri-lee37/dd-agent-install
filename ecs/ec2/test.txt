@@ -1,1 +1,0 @@
-ansible-playbook -i <INVENTORY_PATH> datadog_playbook.yaml 
